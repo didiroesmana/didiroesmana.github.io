@@ -1,21 +1,32 @@
 <template>
-  <v-container fluid>
-        <v-slide-y-transition mode="out-in">
-          <v-layout column align-center>
-            <img src="/public/v.png" alt="Vuetify.js" class="mb-5" />
-            <blockquote>
-              &#8220;First, solve the problem. Then, write the code.&#8221;
+  <div>
+    <div class="hero-section parallax">
+      <div class="hero-section-text">
+        <h2 class="left-text">Didi Roesmana</h2>
+        <h5>Fullstack Web Developer</h5>
+        <h5>Ordinary <em>Dota 2</em> Player, who play Invoker a lot</h5>
+      </div>
+    </div>
+    <v-container fluid>
+      <v-slide-y-transition mode="out-in">
+        <v-layout row wrap>
+          <v-flex md3 offset-md5 xs12 align-center justify-center>
+            <blockquote class="align-center">
+              &#8220;Knowledge is power!&#8221;
               <footer>
                 <small>
-                  <em>&mdash;John Johnson</em>
+                  <em>&mdash;Invoker</em>
                 </small>
               </footer>
             </blockquote>
-          </v-layout>
-        </v-slide-y-transition>
-      </v-container>
+          </v-flex>
+        </v-layout>
+      </v-slide-y-transition>
+    </v-container>
+  </div>
 </template>
 <script>
+  
   export default {
     name: 'Home',
     data () {
@@ -39,3 +50,39 @@
     }
   }
 </script>
+
+<style lang="scss">
+
+  div.hero-section {
+    background: url("../public/images/header.jpg") 100% no-repeat;
+    background-size: cover;
+    height: 70vh;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    .hero-section-text {
+      color: #fefefe;
+      text-shadow: 1px 1px 2px #0a0a0a;
+
+      h1,h2 {
+        color: #fff;
+        text-shadow: 3px 2px 2px #333;
+      }
+
+      em {
+        color: #B44335;
+      }
+    }
+  }
+
+
+
+</style>

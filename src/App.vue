@@ -64,7 +64,7 @@
         drawer: false,
         fixed: true,
         items: [
-          { icon: 'github', title: 'Look Me at Github', to: 'https://github.com/didiroesmana' },
+          { icon: 'github', title: 'Fork Me Out at Github', to: 'https://github.com/didiroesmana' },
           { icon: 'phone', title: 'Reach Me Out', to: '#'}
         ],
         miniVariant: false,
@@ -82,6 +82,18 @@
 </script>
 
 <style lang="stylus">
+  @import '../node_modules/vuetify/src/stylus/settings/_colors'
+
+  $theme := {
+    primary: $cyan.darken-2
+    accent: $red.accent-2
+    secondary: $grey.darken-3
+    info: $blue.lighten-1
+    warning: $amber.darken-2
+    error: $red.accent-4
+    success: $green.lighten-2
+  }
+
   @import './stylus/main'
 </style>
 
